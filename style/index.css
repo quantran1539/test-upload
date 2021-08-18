@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    width: 50%;
+    text-align: center;
+}
+
+.header-left div {
+    display: inline-block;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.search input {
+    border-radius: 15px;
+    width: 275px;
+    padding: 7px;
+    border: 2px solid rgb(245, 245, 245);
+}
+
+.header-right {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+#header-r1 {
+    width: 50%;
+}
+
+.header-right span:first-child {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-right span:last-child {
+    background-color: rgb(238, 28, 28);
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 15px;
+    color: white;
+}
+
+
+/* Header Menu */
+
+.menu-container {
+    background-color: rgb(245, 245, 245);
+}
+
+#header-menu {
+    display: flex;
+    padding-top: 50px;
+    padding: 0px 15px;
+    margin: 0px 150px;
+}
+
+.header-menu img {
+    width: 70px;
+}
+
+.header-menu li {
+    width: 17%;
+    list-style: none;
+}
+
+.header-menu li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.slides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Main */
+
+.main-container {
+    display: flex;
+}
+
+.main-content {
+    width: 50%;
+    height: 700px;
+    text-align: center;
+}
+
+.main-content-sm h2 {
+    padding: 15px 0px;
+    margin-top: 30px;
+}
+
+.main-content-sm p {
+    padding: 0px 70px;
+}
+
+.main-product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.prdct {
+    width: 33.3%;
+    position: relative;
+}
+
+.prdct img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.prdct a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.far {
+    color: rgb(216, 158, 0);
+    font-size: 13px;
+}
+
+.parallax-content {
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+.img-parallax1 {
+    width: 50%;
+    background: url("../img/parallax-1.jpg") no-repeat fixed 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.prdct:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.img-parallax2 {
+    width: 50%;
+    background: url("../img/parallax-2.jpg") no-repeat fixed 100%;
+    background-size: cover;
+}
+
+.img-parallax3 {
+    width: 50%;
+    background: url("../img/parallax-3.jpg") no-repeat fixed 100%;
+}
+
+
+/* News */
+
+.news {
+    text-align: center;
+}
+
+.news h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.news-flex {
+    display: flex;
+}
+
+.news-content {
+    width: 25%;
+    margin-top: 30px;
+}
+
+.news-content img {
+    width: 200px;
+}
+
+
+/* Footer */
+
+.footer-container {
+    background-color: rgb(100, 100, 100);
+    padding: 0px 100px;
+    position: relative;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.ft1 {
+    float: left;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    margin-right: 20px;
+    height: auto;
+    padding: 10px;
+}
+
+.ft1 p {
+    color: rgb(161, 161, 161);
+    font-size: 15px;
+}
+
+.ft1 a {
+    color: rgb(161, 161, 161);
+    font-size: 15px;
+}
+
+.ft1 .icons{
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+}
+
+.ft1 .addr{
+    border-radius: 10px;
+}
+
+.social {
+    display: flex;
+    text-align: center;
+}
+
+.social a {
+    width: 20%;
+    color: rgb(190, 190, 190);
+}
+
+.ft-sm-container {
+    display: flex;
+}
+
+.ft2 {
+    margin-left: 20px;
+}
+
+.ft2-content {
+    width: 25%;
+}
+
+.ft2-content a {
+    display: block;
+}
+
+.ft2-content iframe {
+    width: 350px;
+    height: 250px;
+}
